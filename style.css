@@ -1,0 +1,92 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --green: hsl(75, 94%, 57%);
+  --grey: hsl(0, 0%, 20%);
+  --darkGrey: hsl(0, 0%, 12%);
+  --offBlack: hsl(0, 0%, 8%);
+  --inter: "Inter", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--offBlack);
+  font-family: var(--inter), sans-serif;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  margin: 10px 0;
+}
+
+ul li {
+  list-style-type: none;
+  display: block;
+  margin: 15px 0;
+  border-radius: 5px;
+  padding: 15px 25px;
+  font-weight: 700;
+  font-size: 15px;
+  background-color: var(--grey);
+}
+
+ul li:hover {
+  cursor: pointer;
+  background-color: var(--green);
+  transition: 0.2s linear;
+  color: var(--offBlack);
+}
+
+span {
+  color: var(--green);
+  font-family: var(--inter);
+  font-weight: 700;
+  font-size: 15px;
+}
+
+p {
+  margin: 25px 0;
+  font-size: 14px;
+  font-family: var(--inter);
+  font-weight: 400;
+  color: var(--white);
+}
+
+img {
+  border-radius: 50%;
+  height: 80px;
+}
+
+.card {
+  background-color: var(--darkGrey);
+  text-align: center;
+  width: 385px;
+  height: 600px;
+  color: var(--white);
+  padding: 40px;
+  border-radius: 8px;
+  border: 2px solid black;
+}
+
+.attribution {
+  position: relative;
+  bottom: 80px;
+  font-size: 18px;
+  text-align: center;
+  color: var(--white);
+}
+
+.attribution a {
+  color: var(--green);
+}
